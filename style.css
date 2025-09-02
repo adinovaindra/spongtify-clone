@@ -74,13 +74,13 @@ h6 {
 
 /* HEADER CSS START */
 nav {
-    background-color: black;
+    background-color: #121212;
     align-items: center;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: flex;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     height: 70px;
     justify-content: space-between;
@@ -114,7 +114,7 @@ a:active {
 .navbar ul {
   display: flex;
   gap: 35px;
-  font-weight: 700;
+  font-weight: 500;
   align-items: center;
   list-style: none;
   margin-right: 50px;
@@ -124,7 +124,7 @@ a:active {
 /* MAIN CSS START */
 /* Hero START */
 .hero {
-  background: linear-gradient(to bottom, #A1268B 0%, black 200px, black);
+  background: linear-gradient(to bottom, #A1268B 0%, #121212 200px, #121212);
   padding: 50px 0;
 }
 

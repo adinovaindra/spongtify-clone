@@ -93,7 +93,14 @@ nav {
     align-items: center;
     gap:4px;
     text-decoration: none;
+    font-size: 18px;
     color: white;
+    margin-left: 115px;
+}
+
+.registertm {
+  font-size: 10px;
+  
 }
 
 .logo-area img {
@@ -102,10 +109,17 @@ nav {
 
 a:link,
 a:visited,
-a:hover,
 a:active {
     font-family: "Montserrat", sans-serif;
     color: white;
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "Montserrat", sans-serif;
+    color: #1db954;
     font-style: normal;
     font-weight: 800;
     text-decoration: none;
@@ -119,6 +133,7 @@ a:active {
   list-style: none;
   margin-right: 50px;
 }
+
 /* HEADER CSS END */
 
 /* MAIN CSS START */
@@ -126,6 +141,8 @@ a:active {
 .hero {
   background: linear-gradient(to bottom, #A1268B 0%, #121212 200px, #121212);
   padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo h1{
@@ -168,6 +185,11 @@ a:active {
   padding: 10px 30px;
 }
 
+.hero-img {
+  width: 400px;
+  margin: 75px 190px 115px 0px;
+}
+
 .hero p {
   font-size: 10px;
   font-weight: 500;
@@ -179,4 +201,64 @@ a.terms {
   line-height: normal;
 }
 /* Hero END */
+
+/* Benefits Section START */
+.benefits {
+  background-color: #121212;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* Benefits Section END */
+
+/* Comparison Section START */
+
+.comparison {
+  background-color: #121212;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison table {
+  width: 35%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+
+.comparison td {
+  text-align: left;
+  padding: 15px 10px;
+  border-bottom: 1px solid white;
+}
+
+.comparison th {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.comparison th:nth-child(2),
+.comparison td:nth-child(2) {
+  text-align: center;
+  padding-right: 40px;
+}
+
+.comparison td {
+  font-weight: 500;
+}
+
+.comparison td:nth-child(2),
+.comparison td:nth-child(3),
+.comparison th:nth-child(2),
+.comparison th:nth-child(3) {
+  text-align: center;
+  width: 20%;
+}
+
+.comparison td:first-child {
+  text-decoration: underline dashed;
+}
+/* Comparison Section END */
 /* MAIN CSS END */

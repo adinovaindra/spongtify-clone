@@ -11,6 +11,8 @@
 
 * {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,6 +23,7 @@
 
 body {
   line-height: 1.5;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,67 +74,109 @@ h6 {
 
 /* HEADER CSS START */
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     align-items: center;
     box-sizing: border-box;
-    color: rgb(30, 215, 96);
+    color: rgb(255, 255, 255);
     display: flex;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    height: 64px;
+    height: 70px;
     justify-content: space-between;
     max-width: 100%;
     padding: 0 32px;
 }
 
-.logo-area {
+.logo-area a.logo{
     display: flex;
-    gap: 4px;
+    align-items: center;
+    gap:4px;
+    text-decoration: none;
+    color: white;
 }
 
 .logo-area img {
-    width: 22px;
-    display: inline;
+    height: 22px;
 }
 
-.logo-area a {
-    display: inline;
-}
-
-a:link {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:visited {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:hover {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     text-decoration: none;
 }
 
-
-
-
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  font-weight: 700;
+  align-items: center;
+  list-style: none;
+  margin-right: 50px;
+}
 /* HEADER CSS END */
+
+/* MAIN CSS START */
+/* Hero START */
+.hero {
+  background: linear-gradient(to bottom, #A1268B 0%, black 200px, black);
+  padding: 50px 0;
+}
+
+.promo h1{
+  box-sizing: border-box;
+  width: 55%;
+  margin-top: 30px;
+  margin-left: 115px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.promo p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 115px;
+}
+
+.button-section {
+  margin-top: 30px;
+  margin-left: 115px;
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.trial {
+  border: 1px solid #A1268B;
+  border-radius: 50px;
+  background-color: #A1268B;
+  padding: 10px 50px;
+  
+}
+
+.viewplans {
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: black;
+  padding: 10px 30px;
+}
+
+.hero p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+a.terms {
+  text-decoration: underline;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Hero END */
+/* MAIN CSS END */

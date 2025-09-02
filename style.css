@@ -1,0 +1,137 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS RESET END */
+
+/* HEADER CSS START */
+nav {
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(30, 215, 96);
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 64px;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 32px;
+}
+
+.logo-area {
+    display: flex;
+    gap: 4px;
+}
+
+.logo-area img {
+    width: 22px;
+    display: inline;
+}
+
+.logo-area a {
+    display: inline;
+}
+
+a:link {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:active {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+
+/* HEADER CSS END */

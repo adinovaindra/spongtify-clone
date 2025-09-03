@@ -25,6 +25,7 @@ body {
   line-height: 1.5;
   height: 100vh;
   -webkit-font-smoothing: antialiased;
+  background-color: #121212;
 }
 
 img,
@@ -95,7 +96,7 @@ nav {
     text-decoration: none;
     font-size: 18px;
     color: white;
-    margin-left: 115px;
+    margin-left: 90px;
 }
 
 .registertm {
@@ -104,7 +105,7 @@ nav {
 }
 
 .logo-area img {
-    height: 22px;
+    height: 34px;
 }
 
 a:link,
@@ -131,7 +132,7 @@ a:hover {
   font-weight: 500;
   align-items: center;
   list-style: none;
-  margin-right: 50px;
+  margin-right: 120px;
 }
 
 /* HEADER CSS END */
@@ -261,4 +262,306 @@ a.terms {
   text-decoration: underline dashed;
 }
 /* Comparison Section END */
+
+/* Payment Method Section START */
+
+.paymentmethod h2,
+p {
+  text-align: center;
+}
+
+p {
+  box-sizing: border-box;
+  margin: 20px 300px;
+
+}
+
+.paymentmethod .logo img{
+  width: 70px;
+
+}
+
+.paymentmethod ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.more-wrapper {
+  position: relative;
+  display: block;
+  margin: 15px auto;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.popup img {
+  width: 55px;
+  display: inline;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.more-wrapper:hover .popup{
+  display: block;
+  margin: auto;
+  align-items: center;
+  width: 200px;
+  gap: 10px;
+}
+/* Payment Method Section END */
+/* More feature Section START */
+.more-feature {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.more-feature h3 {
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.more-feature ul {
+  list-style: none;
+  padding: 0;
+}
+
+.more-feature ul li {
+  margin: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.more-feature ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background: url(assets/checklist-icon.png) no-repeat center;
+  background-size: contain;
+}
+/* More feature Section END */
+
+/* Allplans Section START */
+
+.allplans {
+  margin: 75px 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.selection {
+  background-color: #242424;
+  border: 1px solid #242424;
+  border-radius: 10px;
+}
+
+.allplans .selection:nth-child(4) {
+  grid-column: 2;
+}
+
+.selection img {
+  width: 32px;
+}
+
+hr {
+  margin: 15px;
+  border: 1px solid #5d5a5a;
+  
+}
+
+.selection ul {
+  margin-top: 10px;
+  margin-left: 0;
+  
+}
+
+.buttonclass {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.onetimepaymentbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  margin: 0 15px;
+}
+
+.tnc {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  font-size: 11px;
+  color: #818181;
+  font-weight: 500;
+}
+
+.tnc a {
+  color: #818181;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.premiumplan {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  margin: 20px 10px 10px;
+  font-weight: 600;
+}
+
+.individual h4{
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #F9D2D7;
+  border: 1px solid #F9D2D7;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.duo h4{
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #F6C862;
+  border: 1px solid #F6C862;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.student h4{
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #C4B1D4;
+  border: 1px solid #C4B1D4;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.individual h3 {
+  font-size: 20px;
+  color: #F9D2D7;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.duo h3 {
+  font-size: 20px;
+  color: #F6C862;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.student h3 {
+  font-size: 20px;
+  color: #C4B1D4;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.promoprice {
+  display: block;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.priceafterpromo {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #818181;
+}
+
+
+.pinkbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #F9D2D7;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.yellowbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #F6C862;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.violetbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #C4B1D4;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.family h3 {
+  font-size: 20px;
+  color: #a5bbd1;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.family .promoprice {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 55px;
+  font-weight: 600;
+}
+
+.bluebutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  margin: 0 15px;
+  background-color: #a5bbd1;
+  color: black;
+}
+
+/* Allplans Section END */
 /* MAIN CSS END */

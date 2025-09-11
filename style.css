@@ -1,3 +1,5 @@
+/* CSS RESET START */
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -75,55 +77,54 @@ h6 {
 
 /* HEADER CSS START */
 nav {
-    background-color: #121212;
-    align-items: center;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 70px;
-    justify-content: space-between;
-    max-width: 100%;
-    padding: 0 32px;
+  background-color: black;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 72px;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 32px;
 }
 
-.logo-area a.logo{
-    display: flex;
-    align-items: center;
-    gap:4px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    margin-left: 90px;
+.logo-area a.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin-left: 90px;
 }
 
 .registertm {
   font-size: 10px;
-  
 }
 
 .logo-area img {
-    height: 34px;
+  height: 34px;
 }
 
 a:link,
 a:visited,
 a:active {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 800;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 a:hover {
-    font-family: "Montserrat", sans-serif;
-    color: #1db954;
-    font-style: normal;
-    font-weight: 800;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #1db954;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .navbar ul {
@@ -139,14 +140,19 @@ a:hover {
 
 /* MAIN CSS START */
 /* Hero START */
+
+main {
+  background-color: #121212;
+}
+
 .hero {
-  background: linear-gradient(to bottom, #A1268B 0%, #121212 200px, #121212);
+  background: linear-gradient(to bottom, #a1268b 4%, #121212 31%, #121212);
   padding: 50px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.promo h1{
+.promo h1 {
   box-sizing: border-box;
   width: 55%;
   margin-top: 30px;
@@ -170,13 +176,11 @@ a:hover {
   font-weight: 600;
 }
 
-
 .trial {
-  border: 1px solid #A1268B;
+  border: 1px solid #a1268b;
   border-radius: 50px;
-  background-color: #A1268B;
+  background-color: #a1268b;
   padding: 10px 50px;
-  
 }
 
 .viewplans {
@@ -226,7 +230,6 @@ a.terms {
   font-size: 14px;
 }
 
-
 .comparison td {
   text-align: left;
   padding: 15px 10px;
@@ -275,9 +278,8 @@ a.terms {
   text-align: center;
 }
 
-.paymentmethod .logo img{
+.paymentmethod .logo img {
   width: 70px;
-
 }
 
 .paymentmethod ul {
@@ -308,7 +310,7 @@ a.terms {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .popup img {
@@ -318,7 +320,7 @@ a.terms {
   padding: 10px;
 }
 
-.more-wrapper:hover .popup{
+.more-wrapper:hover .popup {
   display: block;
   margin: auto;
   align-items: center;
@@ -390,13 +392,11 @@ a.terms {
 hr {
   margin: 15px;
   border: 1px solid #5d5a5a;
-  
 }
 
 .selection ul {
   margin-top: 10px;
   margin-left: 0;
-  
 }
 
 .buttonclass {
@@ -439,59 +439,59 @@ hr {
   font-weight: 600;
 }
 
-.individual h4{
+.individual h4 {
   display: block;
   width: 60%;
   padding-left: 5px;
   padding-top: 2px;
   height: 30px;
-  background-color: #F9D2D7;
-  border: 1px solid #F9D2D7;
+  background-color: #f9d2d7;
+  border: 1px solid #f9d2d7;
   border-radius: 10px 0 10px 0;
   color: black;
 }
 
-.duo h4{
+.duo h4 {
   display: block;
   width: 60%;
   padding-left: 5px;
   padding-top: 2px;
   height: 30px;
-  background-color: #F6C862;
-  border: 1px solid #F6C862;
+  background-color: #f6c862;
+  border: 1px solid #f6c862;
   border-radius: 10px 0 10px 0;
   color: black;
 }
 
-.student h4{
+.student h4 {
   display: block;
   width: 60%;
   padding-left: 5px;
   padding-top: 2px;
   height: 30px;
-  background-color: #C4B1D4;
-  border: 1px solid #C4B1D4;
+  background-color: #c4b1d4;
+  border: 1px solid #c4b1d4;
   border-radius: 10px 0 10px 0;
   color: black;
 }
 
 .individual h3 {
   font-size: 20px;
-  color: #F9D2D7;
+  color: #f9d2d7;
   margin-left: 10px;
   font-size: 30px;
 }
 
 .duo h3 {
   font-size: 20px;
-  color: #F6C862;
+  color: #f6c862;
   margin-left: 10px;
   font-size: 30px;
 }
 
 .student h3 {
   font-size: 20px;
-  color: #C4B1D4;
+  color: #c4b1d4;
   margin-left: 10px;
   font-size: 30px;
 }
@@ -510,11 +510,10 @@ hr {
   color: #818181;
 }
 
-
 .pinkbutton {
   border-radius: 30px;
   height: 60px;
-  background-color: #F9D2D7;
+  background-color: #f9d2d7;
   font-weight: 600;
   margin: 0 15px;
   color: black;
@@ -523,7 +522,7 @@ hr {
 .yellowbutton {
   border-radius: 30px;
   height: 60px;
-  background-color: #F6C862;
+  background-color: #f6c862;
   font-weight: 600;
   margin: 0 15px;
   color: black;
@@ -532,7 +531,7 @@ hr {
 .violetbutton {
   border-radius: 30px;
   height: 60px;
-  background-color: #C4B1D4;
+  background-color: #c4b1d4;
   font-weight: 600;
   margin: 0 15px;
   color: black;
@@ -565,8 +564,12 @@ hr {
 /* Allplans Section END */
 
 /* FAQ Section START */
+.faq {
+  margin-bottom: 100px;
+}
+
 .faq h2,
-.answerfaq  {
+.answerfaq {
   text-align: center;
   margin: 10px auto;
 }
@@ -597,9 +600,9 @@ hr {
 }
 
 .faq details summary {
-  list-style: none ;
+  list-style: none;
   position: relative;
-  transition: background-color 0.3s ease, color 0,3s ease;
+  transition: background-color 0.3s ease, color 0, 3s ease;
 }
 
 .faq details summary:hover {
@@ -621,6 +624,7 @@ hr {
   height: 2em;
   background: url(assets/feather-icons/chevron-down.svg) no-repeat center;
   background-size: contain;
+  transition: 0.2s;
 }
 
 .faq details[open] summary::before {
@@ -628,11 +632,147 @@ hr {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: rotate(180deg);
   width: 2em;
   height: 2em;
-  background: url(assets/feather-icons/chevron-up.svg) no-repeat center;
   background-size: contain;
 }
 /* FAQ Section END */
 /* MAIN CSS END */
+
+/* FOOTER Section START */
+.footer {
+  background-color: black;
+  padding: 60px 100px 20px 100px;
+  padding: 50px 80px;
+  position: relative;
+}
+
+.navbar-footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 0.8fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.logo-area-bottom img {
+  height: 34px;
+  margin-right: 8px;
+}
+
+.logo-area-bottom a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.company ul,
+.communities ul,
+.useful-links ul,
+.spotify-plans ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company ul li:first-child,
+.communities ul li:first-child,
+.useful-links ul li:first-child,
+.spotify-plans ul li:first-child {
+  color: #818181;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.company ul li,
+.communities ul li,
+.useful-links ul li,
+.spotify-plans ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.company ul li:hover,
+.communities ul li:hover,
+.useful-links ul li:hover,
+.spotify-plans ul li:hover {
+  color: #1db954;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.instagram,
+.twitter,
+.facebook {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #222326;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+.instagram img,
+.twitter img,
+.facebook img {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.75);
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.bottom-bar {
+  display: flex;
+  margin: 200px auto 0;
+}
+
+.bottom-bar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+  padding: 0;
+}
+
+.bottom-bar ul li:hover {
+  color: #1db954;
+}
+
+.region-and-copyright {
+  display: block;
+  position: absolute;
+  bottom: 60px;
+  right: 110px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+.region-and-copyright ul {
+  list-style: none;
+  display: block;
+  gap: 20px;
+  padding: 0;
+}
+
+/* FOOTER Section END */

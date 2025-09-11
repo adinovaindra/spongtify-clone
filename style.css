@@ -1,0 +1,778 @@
+/* CSS RESET START */
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  background-color: #121212;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS RESET END */
+
+/* HEADER CSS START */
+nav {
+  background-color: black;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 72px;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 32px;
+}
+
+.logo-area a.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin-left: 90px;
+}
+
+.registertm {
+  font-size: 10px;
+}
+
+.logo-area img {
+  height: 34px;
+}
+
+a:link,
+a:visited,
+a:active {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Montserrat", sans-serif;
+  color: #1db954;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  font-weight: 500;
+  align-items: center;
+  list-style: none;
+  margin-right: 120px;
+}
+
+/* HEADER CSS END */
+
+/* MAIN CSS START */
+/* Hero START */
+
+main {
+  background-color: #121212;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #a1268b 4%, #121212 31%, #121212);
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo h1 {
+  box-sizing: border-box;
+  width: 55%;
+  margin-top: 30px;
+  margin-left: 115px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.promo p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 115px;
+}
+
+.button-section {
+  margin-top: 30px;
+  margin-left: 115px;
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.trial {
+  border: 1px solid #a1268b;
+  border-radius: 50px;
+  background-color: #a1268b;
+  padding: 10px 50px;
+}
+
+.viewplans {
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: black;
+  padding: 10px 30px;
+}
+
+.hero-img {
+  width: 400px;
+  margin: 75px 190px 115px 0px;
+}
+
+.hero p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+a.terms {
+  text-decoration: underline;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Hero END */
+
+/* Benefits Section START */
+.benefits {
+  background-color: #121212;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* Benefits Section END */
+
+/* Comparison Section START */
+
+.comparison {
+  background-color: #121212;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison table {
+  width: 35%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.comparison td {
+  text-align: left;
+  padding: 15px 10px;
+  border-bottom: 1px solid white;
+}
+
+.comparison th {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.comparison th:nth-child(2),
+.comparison td:nth-child(2) {
+  text-align: center;
+  padding-right: 40px;
+}
+
+.comparison td {
+  font-weight: 500;
+}
+
+.comparison td:nth-child(2),
+.comparison td:nth-child(3),
+.comparison th:nth-child(2),
+.comparison th:nth-child(3) {
+  text-align: center;
+  width: 20%;
+}
+
+.comparison td:first-child {
+  text-decoration: underline dashed;
+}
+/* Comparison Section END */
+
+/* Payment Method Section START */
+
+.paymentmethod h2 {
+  text-align: center;
+}
+
+.paymentmethod p {
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.paymentmethod .logo img {
+  width: 70px;
+}
+
+.paymentmethod ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.more-wrapper {
+  position: relative;
+  display: block;
+  margin: 15px auto;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup img {
+  width: 55px;
+  display: inline;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.more-wrapper:hover .popup {
+  display: block;
+  margin: auto;
+  align-items: center;
+  width: 200px;
+  gap: 10px;
+}
+/* Payment Method Section END */
+/* More feature Section START */
+.more-feature {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.more-feature h3 {
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.more-feature ul {
+  list-style: none;
+  padding: 0;
+}
+
+.more-feature ul li {
+  margin: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.more-feature ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background: url(assets/checklist-icon.png) no-repeat center;
+  background-size: contain;
+}
+/* More feature Section END */
+
+/* Allplans Section START */
+
+.allplans {
+  margin: 75px 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.selection {
+  background-color: #242424;
+  border: 1px solid #242424;
+  border-radius: 10px;
+}
+
+.allplans .selection:nth-child(4) {
+  grid-column: 2;
+}
+
+.selection img {
+  width: 32px;
+}
+
+hr {
+  margin: 15px;
+  border: 1px solid #5d5a5a;
+}
+
+.selection ul {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.buttonclass {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.onetimepaymentbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  margin: 0 15px;
+}
+
+.tnc {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  font-size: 11px;
+  color: #818181;
+  font-weight: 500;
+}
+
+.tnc a {
+  color: #818181;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.premiumplan {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  margin: 20px 10px 10px;
+  font-weight: 600;
+}
+
+.individual h4 {
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #f9d2d7;
+  border: 1px solid #f9d2d7;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.duo h4 {
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #f6c862;
+  border: 1px solid #f6c862;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.student h4 {
+  display: block;
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 2px;
+  height: 30px;
+  background-color: #c4b1d4;
+  border: 1px solid #c4b1d4;
+  border-radius: 10px 0 10px 0;
+  color: black;
+}
+
+.individual h3 {
+  font-size: 20px;
+  color: #f9d2d7;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.duo h3 {
+  font-size: 20px;
+  color: #f6c862;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.student h3 {
+  font-size: 20px;
+  color: #c4b1d4;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.promoprice {
+  display: block;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.priceafterpromo {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #818181;
+}
+
+.pinkbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #f9d2d7;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.yellowbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #f6c862;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.violetbutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: #c4b1d4;
+  font-weight: 600;
+  margin: 0 15px;
+  color: black;
+}
+
+.family h3 {
+  font-size: 20px;
+  color: #a5bbd1;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.family .promoprice {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 55px;
+  font-weight: 600;
+}
+
+.bluebutton {
+  border-radius: 30px;
+  height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  margin: 0 15px;
+  background-color: #a5bbd1;
+  color: black;
+}
+
+/* Allplans Section END */
+
+/* FAQ Section START */
+.faq {
+  margin-bottom: 100px;
+}
+
+.faq h2,
+.answerfaq {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.faq h2 {
+  font-size: 30px;
+}
+
+.faq a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.faq details {
+  width: 85%;
+  margin: 20px auto;
+  padding: 10px;
+  border-bottom: 1px solid #5d5a5a;
+}
+
+.faq summary {
+  font-weight: 700;
+}
+
+.answer {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.faq details summary {
+  list-style: none;
+  position: relative;
+  transition: background-color 0.3s ease, color 0, 3s ease;
+}
+
+.faq details summary:hover {
+  cursor: pointer;
+  color: #f3f3f3;
+}
+
+.faq details summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq details summary::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background: url(assets/feather-icons/chevron-down.svg) no-repeat center;
+  background-size: contain;
+  transition: 0.2s;
+}
+
+.faq details[open] summary::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(180deg);
+  width: 2em;
+  height: 2em;
+  background-size: contain;
+}
+/* FAQ Section END */
+/* MAIN CSS END */
+
+/* FOOTER Section START */
+.footer {
+  background-color: black;
+  padding: 60px 100px 20px 100px;
+  padding: 50px 80px;
+  position: relative;
+}
+
+.navbar-footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 0.8fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.logo-area-bottom img {
+  height: 34px;
+  margin-right: 8px;
+}
+
+.logo-area-bottom a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.company ul,
+.communities ul,
+.useful-links ul,
+.spotify-plans ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company ul li:first-child,
+.communities ul li:first-child,
+.useful-links ul li:first-child,
+.spotify-plans ul li:first-child {
+  color: #818181;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.company ul li,
+.communities ul li,
+.useful-links ul li,
+.spotify-plans ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.company ul li:hover,
+.communities ul li:hover,
+.useful-links ul li:hover,
+.spotify-plans ul li:hover {
+  color: #1db954;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.instagram,
+.twitter,
+.facebook {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #222326;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+.instagram img,
+.twitter img,
+.facebook img {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.75);
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.bottom-bar {
+  display: flex;
+  margin: 200px auto 0;
+}
+
+.bottom-bar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+  padding: 0;
+}
+
+.bottom-bar ul li:hover {
+  color: #1db954;
+}
+
+.region-and-copyright {
+  display: block;
+  position: absolute;
+  bottom: 60px;
+  right: 110px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+.region-and-copyright ul {
+  list-style: none;
+  display: block;
+  gap: 20px;
+  padding: 0;
+}
+
+/* FOOTER Section END */

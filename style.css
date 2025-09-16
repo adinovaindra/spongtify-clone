@@ -588,6 +588,19 @@ hr {
   margin: 20px auto;
   padding: 10px;
   border-bottom: 1px solid #5d5a5a;
+  max-height: 100px;
+  overflow: hidden;
+  transition: all 5s linear;
+}
+
+.faq details[open] {
+  max-height: 1000px;
+  transition: all 5s linear;
+}
+
+.faq details[close] {
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .faq summary {
@@ -596,13 +609,13 @@ hr {
 
 .answer {
   text-align: left;
-  margin: 15px 0;
+  margin: 45px 0 15px;
 }
 
 .faq details summary {
   list-style: none;
   position: relative;
-  transition: background-color 0.3s ease, color 0, 3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .faq details summary:hover {
